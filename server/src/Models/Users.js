@@ -5,8 +5,14 @@ const userSchema = new mongoose.Schema({
   name: String,
   email: String,
   phone_number: Number,
-  address: String,
-  role: { type: String, enum: ['admin', 'collector', 'citizen'], required:true }
+  address: {
+    street: String,
+    city: String,
+    state: String,
+    country: String,
+    zip_code: Number
+  },
+  role: { type: String, enum: ['admin', 'collector', 'citizen'], required: true }
 });
 
 module.exports = mongoose.model('User', userSchema);
