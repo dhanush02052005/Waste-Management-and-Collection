@@ -1,15 +1,40 @@
 {
-  "name": "waste-management-and-collection",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^5.1.0"
-  }
+    "name": "backend-tutorial",
+    "version": "1.0.0",
+    "description": "tutorial for backend with nodejs express",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js",
+        "debug": "node inspect  index.js",
+        "lint:fix": "eslint . --fix",
+        "format": "prettier --write \"**/*.{js,jsx,json,css,md}\"",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "nodejs",
+        "express",
+        "mongodb"
+    ],
+    "author": "avinashkumar M",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^9.25.1",
+        "eslint-plugin-unused-imports": "^4.1.4",
+        "globals": "^16.0.0",
+        "nodemon": "^3.1.10",
+        "prettier": "^3.5.3"
+    },
+    "dependencies": {
+        "backend-tutorial": "file:",
+        "bcryptjs": "^3.0.2",
+        "dotenv": "^16.5.0",
+        "ejs": "^3.1.10",
+        "express": "^5.1.0",
+        "joi": "^17.13.3",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.14.0",
+        "morgan": "^1.10.0",
+        "nodemailer": "^6.10.1"
+    }
 }
