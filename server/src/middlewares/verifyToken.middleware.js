@@ -1,4 +1,4 @@
-/const tokenService = require('../services/token.service');
+const tokenService = require('../services/token.service');
 
 exports.verifyToken = async function (req, res, next) {
     try {
